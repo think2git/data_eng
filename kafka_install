@@ -1,0 +1,69 @@
+You should have Java (JDK) installed on your windows machine.
+
+Apache Kafka official website: https://kafka.apache.org/downloads
+ 
+Required Commands:
+
+.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partition 1 --topic test
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic test
+-------------------------------------------------------------------------------------------------------
+Sample Data:
+
+{"Name: "John", "Age":"31", "Gender":"Male"}
+{"Name: "Emma", "Age":"27", "Gender":"Female"}
+{"Name: "Ronald", "Age":"17", "Gender":"Male"}
+---------------------------------------------------------------------------------------------------------
+
+kafka-console-consumer.bat --topic test --bootstrap-server localhost:9092 --from-beginning
+
+.\bin\windows\zookeeper-server-stop.bat .\config\zookeeper.properties
+
+.\bin\windows\kafka-server-stop.bat .\config\server.properties
+
+--------------------------------------------------------------------------------------------------------
+ 
+Want to know more about Big Data? then checkout the full course  dedicated to Big Data fundamentals:    • Big Data Full Course  
+    
+---------------------------------------------------------------------------------------------------------
+
+Also check out similar informative videos in the field of cloud computing:
+
+What is Big Data:    • What is Big Data? | Big Data Use Case...  
+
+How Cloud Computing changed the world:    • How Cloud Computing changed the world!  
+
+What is Cloud?     • What is Cloud Computing?  
+
+Top 10 facts about Cloud Computing that will blow your mind!     • Top 10 facts about Cloud Computing th...  
+
+Audience
+
+This tutorial is made for professionals who are willing to learn the basics of Big Data Analytics using Hadoop Ecosystem and become a Hadoop Developer. Software Professionals, Analytics Professionals, and ETL developers are the key beneficiaries of this course.
+
+Prerequisites
+
+Before you start proceeding with this course, I am assuming that you have some basic knowledge to Core Java, database concepts, and any of the Linux operating system flavors.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Check out our full course topic wise playlist on some of the most popular  technologies:
+
+SQL Full Course Playlist- 
+   • SQL Full Course  
+
+
+PYTHON Full Course Playlist- 
+   • Python Full Course  
+
+Data Warehouse Playlist-
+
+   • Data Warehouse Full Course  
+
+
+Unix Shell Scripting Full Course Playlist-
+   • Unix Shell Scripting Full Course  
